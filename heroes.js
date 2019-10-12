@@ -19,8 +19,8 @@ function createHeroBlock(hero) {
 }
 
 function setupHeroReveal() {
-  for (var i = 0; i < heroes.length; i++) {
-    var hero = heroes[i]
+  for (let i = 0; i < heroes.length; i++) {
+    let hero = heroes[i]
 
     document.getElementById(hero.id).onmouseover = function () {
       revealSecretIdentity(hero.realName);
